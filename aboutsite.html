@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>About CaffeiNing</title>
+</head>
+
+<body data-footer-background="false">
+    <div class="container">
+        <!--header-->
+        <div data-header-content="header.html"></div>
+        <div class="main-content">
+            <div style="position: relative; width: 100%; height: 100vh; overflow: hidden;">
+                <video id="background-video"
+                    src="https://video.wixstatic.com/video/11062b_3084d9c3aab7484dbb82293bca4505c5/1080p/mp4/file.mp4"
+                    aria-label="aboutsite-video-as-dynamic-background" autoplay loop muted preload="auto"></video>
+                <div id="reflection">
+                    <h1><span class="tag">Reflection<br>on My Site</span></h1>
+                    <div style="max-width: 1000px;">
+                        <div class="leftbar">
+                            <p><i>When I first started designing my website, I didn't have a clear overall plan, which
+                                    became
+                                    evident
+                                    as I progressed from Assignment 1 to Assignment 3. Here’s what I learned from
+                                    iterating my
+                                    design
+                                    through the different versions:</i></p>
+                        </div>
+                        <p><b>Reusable Module: </b>In the early stages, I didn't fully consider module reusability,
+                            especially the CSS. I focused only
+                            on the components I was developing without considering their impact on other pages. To
+                            address this,
+                            I redesigned the CSS structure, separating common styles from page-specific ones, making the
+                            site
+                            easier to maintain.</p>
+                        <p><b>Friction Conversion: </b>Calls-to-Action (CTA) initially lacked appeal and visibility.
+                            After feedback from Assignment 2
+                            grading and peer reviews, I I changed the background of CTA buttons "Explore more" from
+                            transparent to white with opacity of 0.8 to make it more clearer and
+                            more attractive. I also optimized confusing labels. For instance, the previously
+                            non-clickable "What
+                            are you looking for" field was made clickable and editable, providing visitors with a more
+                            direct
+                            way to interact with the site.</p>
+                        <p><b>Accessibility: </b>Initially, I neglected the needs of people with disabilities, such as
+                            not including alternative text
+                            and having insufficient contrast. I added alternative text to images and ensured all href
+                            links have
+                            associated aria-labels. Additionally, abbreviations now include abbr tags, and I improved
+                            the visual
+                            contrast to ensure clear page structure. These changes have made the site more accessible to
+                            a
+                            broader audience.</p>
+                        <div class="leftbar">
+                            <p><i>Due to time constraints, there are still some tasks that remain unfinished. I plan to
+                                    address these in future iterations:</i></p>
+                        </div>
+                        <p><b>Responsive Design: </b>Initially, my website was designed only for my Chrome browser
+                            without considering other devices,
+                            screen widths, or resolutions. I redesigned the layout to ensure proper display across
+                            different
+                            devices, improving the website's responsiveness. However, I plan to continue refining this
+                            aspect.
+                        </p>
+                        <p><b>Unfinished Content: </b>Time constraints led me to comment out some features. The Beans
+                            module, for instance, was initially
+                            left incomplete. My plan is to divide this module into three sub-pages: Varieties,
+                            Processes, and
+                            Sensory, providing a comprehensive exploration of each aspect.</p>
+                    </div>
+                </div>
+            </div>
+            <!--footer-->
+            <div data-footer-content="footer.html"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v19.0" nonce="8O78nkJY"></script>
+</body>
+
+</html>

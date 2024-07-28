@@ -1,0 +1,147 @@
+/***********************************
+* File: sidebar.css 
+* Desc: CSS for the sidebar layout
+************************************/
+
+/* 
+* Set up a flex container for the layout of header & main content.
+*/
+.container{
+    display:flex;
+}
+/***************************************
+* side bar 
+***************************************/
+.sidebar {
+    width: 400px;
+    /* height: 100vh; */
+    text-align: center;
+    padding: 10px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    background-color: #f0f0f0;  
+    box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.1); 
+    transform: translateX(-5%);
+    transition: transform 0.3s ease-in-out; 
+} 
+
+#logo {
+    margin-left: 0px;
+}
+.sidebar #social-media-share-buttons ul {
+    list-style: none; 
+    display: flex; 
+    justify-content: center; 
+}
+
+.sidebar #social-media-share-buttons ul li {
+    display: inline-block;
+}
+.sidebar #menu ul li{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.sidebar nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar nav ul li a {
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    transition: background-color 0.3s;
+}
+
+/**************************************
+* hover effect for menu items
+***************************************/
+#menu a:hover {
+    padding:10px;
+    background-image:  linear-gradient(45deg, #C1DCDC, #FFFFFF);
+}
+#menu a:before {
+    content: '\f105'; 
+    font-family: 'FontAwesome';
+    display: inline-block;
+    padding-right: 10px; 
+    color: #555; 
+}
+
+/**************************************
+ * Media query for adjusting layout on 
+ * screen widths of 768px or less
+***************************************/
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+    .sidebar {
+        width: 300px; 
+        height: auto;
+        position: fixed;
+        padding:20px
+    }
+    .main-content {
+        width: 100%; 
+        margin-left: 300px;
+        flex-grow: 1;
+    }
+}
+
+/***************************************
+* main content
+***************************************/
+.main-content #cta-1, #cta-2{
+    border: white 10px groove;
+    border-radius: 10px; 
+    box-shadow: 5px 5px 5px rgb(193, 220, 220,0.1); 
+}
+#cta-1 {
+    height: 700px;
+    border-radius: 24px;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    background-image:url(img/christina-rumpf-LMzwJDu6hTE-unsplash.png);
+    background-size: cover;
+}
+
+
+#cta-1-component-1 #slogan {
+    text-align: left;
+    color: black;
+    font-size: 64px;
+    font-weight: 700;
+    text-transform: capitalize;
+    word-wrap: break-word;
+    margin: 50px;
+    background-color: white ;
+    opacity: 0.6;
+}
+
+#cta-1-component-2 {
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 50px;
+    margin-top: 150px;
+}
+
+#cta-1-component-3 img {
+    opacity: 0%;
+}
+#footer .footer-content{
+    border: white 10px groove;
+    border-radius: 10px; 
+    box-shadow: 5px 5px 5px rgb(193, 220, 220,0.1); 
+}

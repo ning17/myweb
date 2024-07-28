@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+    <title>Validation Record</title>
+    <style>
+        body,
+        html {
+            height: 100%;
+            font-family: "Inconsolata", sans-serif;
+        }
+    
+        .bgimg {
+            background-position: center;
+            background-size: cover;
+            background-image: url("/w3images/coffeehouse.jpg");
+            min-height: 75%;
+        }
+    
+        .menu {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <!-- Menu Container -->
+    <div class="w3-container" id="menu">
+        <div class="w3-content" style="max-width:700px">
+
+            <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">Validation Record</span></h5>
+
+            <div class="w3-row w3-center w3-card w3-padding">
+                <a href="javascript:void(0)" onclick="openMenu(event, 'HTML');" id="myLink">
+                    <div class="w3-col s6 tablink">HTML</div>
+                </a>
+                <a href="javascript:void(0)" onclick="openMenu(event, 'TOOL_HTML');">
+                    <div class="w3-col s6 tablink">TOOL HTML </div>
+                </a>
+                <a href="javascript:void(0)" onclick="openMenu(event, 'CSS');">
+                    <div class="w3-col s6 tablink">CSS </div>
+                </a>
+            </div>
+
+            <div id="HTML" class="w3-container menu w3-padding-48 w3-card">
+                <span class="w3-tag">aboutme.html</span>
+                <img src="img/validation/aboutme.png" alt="Valid HTML" class="w3-image">
+
+                <span class="w3-tag">aboutsite.html</span>
+                <img src="img/validation/aboutsite.png" alt="Valid HTML" class="w3-image">
+
+                <span class="w3-tag">drinks.html</span>
+                <img src="img/validation/drinks.png" alt="Valid HTML" class="w3-image">
+
+                <span class="w3-tag">feedback.html</span>
+                <img src="img/validation/feedback.png" alt="Valid HTML" class="w3-image">
+
+                <span class="w3-tag">index.html</span>
+                <img src="img/validation/index.png" alt="Valid HTML" class="w3-image">
+
+                <span class="w3-tag">sitemap.html</span>
+                <img src="img/validation/sitemap.png" alt="Valid HTML" class="w3-image">
+
+                <span class="w3-tag">sourcelog.html</span>
+                <img src="img/validation/sourcelog.png" alt="Valid HTML" class="w3-image">
+
+            </div>
+            <div id="TOOL_HTML" class="w3-container menu w3-padding-48 w3-card">
+                <span class="w3-tag">footer_simplified.html</span>
+                <img src="img/validation/footer_simplified.png" alt="Valid HTML" class="w3-image">
+
+                <span class="w3-tag">footer.html</span>
+                <img src="img/validation/footer.png" alt="Valid HTML" class="w3-image">
+
+                <span class="w3-tag">header.html</span>
+                <img src="img/validation/header.png" alt="Valid HTML" class="w3-image">
+
+                <span class="w3-tag">validation.html</span>
+                <img src="img/validation/validation.png" alt="Valid HTML" class="w3-image">
+
+                <span class="w3-tag">extension.html</span>
+                <img src="img/validation/extension.png" alt="Valid HTML" class="w3-image">
+
+            </div>
+
+
+            <div id="CSS" class="w3-container menu w3-padding-48 w3-card">
+                <h5>style.css</h5>
+                <p>
+                    <a
+                        href="http://jigsaw.w3.org/css-validator/validator?lang=en&profile=css3svg&uri=https%3A%2F%2Fstuweb.cecs.anu.edu.au%2F%7Eu7444108%2Fstyle_sidebar.css&usermedium=all&vextwarning=&warning=1">
+                        <img style="border:0;width:88px;height:31px"
+                            src="https://jigsaw.w3.org/css-validator/images/vcss-blue" alt="Valid CSS!">
+                    </a>
+                </p>
+                <h5>style_sidebar.css</h5>
+                <p>
+                    <a
+                        href="http://jigsaw.w3.org/css-validator/validator?lang=en&profile=css3svg&uri=https%3A%2F%2Fstuweb.cecs.anu.edu.au%2F%7Eu7444108%2Fstyle_sidebar.css&usermedium=all&vextwarning=&warning=1">
+                        <img style="border:0;width:88px;height:31px"
+                            src="https://jigsaw.w3.org/css-validator/images/vcss-blue" alt="Valid CSS!">
+                    </a>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function openMenu(evt, menuName) {
+            var i, x, tablinks;
+            x = document.getElementsByClassName("menu");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablink");
+            for (i = 0; i < x.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" w3-dark-grey", "");
+            }
+            document.getElementById(menuName).style.display = "block";
+            evt.currentTarget.firstElementChild.className += " w3-dark-grey";
+        }
+        document.getElementById("myLink").click();
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <title>Coffee Drinks</title>
+</head>
+
+<body data-footer-background="true">
+    <div class="container">
+        <!--header-->
+        <div data-header-content="header.html"></div>
+        <div class="main-content">
+            <div id="drinks-photo-gallery">
+
+                <div class="gallery-item1">
+                    <img src="./img/drinks/jonathan-borba-21tOEaJPM_o-unsplash.png"
+                        alt="drinks-photo-of-coffee-station-with-menu" style="object-fit: cover;">
+                    <p>A coffee station with a menu on the wall</p>
+                </div>
+                <div>
+                    <p style="margin-top:100px">🤩 Click</p>
+                    <i class="material-icons" style="font-size:32px; color: #C1DCDC;">center_focus_strong</i>
+                    <p>to see more details</p>
+                </div>
+                <div class="gallery-item2">
+                    <img src="./img/drinks/espresso.png" alt="drinks-photo-espresso">
+                    <p class="overlay">Espresso</p>
+                    <i class="material-icons" data-modal="#modal1"> center_focus_strong</i>
+                </div>
+                <div class="gallery-item2">
+                    <img src="./img/drinks/double-espresso.png" alt="drinks-photo-double-espresso">
+                    <p class="overlay">Double Espresso</p>
+                    <i class="material-icons" data-modal="#modal2">center_focus_strong</i>
+                </div>
+                <div class="gallery-item2">
+                    <img src="./img/drinks/latte.png" alt="drinks-photo-latte">
+                    <p class="overlay">Latte</p>
+                    <i class="material-icons" data-modal="#modal3">center_focus_strong</i>
+
+                </div>
+                <div class="gallery-item2">
+                    <img src="./img/drinks/longblack.png" alt="drinks-photo-longblack">
+                    <p class="overlay">Long Black</p>
+                    <i class="material-icons" data-modal="#modal4">center_focus_strong</i>
+                </div>
+                <div class="gallery-item2">
+                    <img src="./img/drinks/cappuccino.png" alt="drinks-photo-cappuccino">
+                    <p class="overlay">Cappuccino</p>
+                    <i class="material-icons" data-modal="#modal5">center_focus_strong</i>
+                </div>
+                <div class="gallery-item2">
+                    <img src="./img/drinks/mocha.png" alt="drinks-photo-mocha">
+                    <p class="overlay">Mocha</p>
+                    <i class="material-icons" data-modal="#modal6">center_focus_strong</i>
+                </div>
+                <div class="gallery-item2">
+                    <img src="./img/drinks/flatwhite.png" alt="drinks-photo-flatwhite">
+                    <p class="overlay">Flat White</p>
+                    <i class="material-icons" data-modal="#modal7">center_focus_strong</i>
+                </div>
+                <div class="gallery-item2">
+                    <img src="./img/drinks/icedcoffee.png" alt="drinks-photo-iced-coffee">
+                    <p class="overlay">Iced Coffee</p>
+                    <i class="material-icons" data-modal="#modal8">center_focus_strong</i>
+                </div>
+                <div class="gallery-item2">
+                    <img src="./img/drinks/chailatte.png" alt="drinks-photo-chailatte">
+                    <p class="overlay">Chai Latte</p>
+                    <i class="material-icons" data-modal="#modal9">center_focus_strong</i>
+                </div>
+                <div class="gallery-item2">
+                    <img src="./img/drinks/americano.png" alt="drinks-photo-americano">
+                    <p class="overlay">Americano</p>
+                    <i class="material-icons" data-modal="#modal10">center_focus_strong</i>
+                </div>
+                <div class="gallery-item2"
+                    style="display: flex; align-items: center; text-align: center; justify-content: center; color: #1E1E1E80;">
+                    TO BE CONTINUE</div>
+                <!--image description window-->
+                <div id="modal1" class="modal">
+                    <button class="prev" onclick="changeModalSlide(-1, 1)" style="display: none;">&#10094;</button>
+                    <button class="next" onclick="changeModalSlide(1, 1)">&#10095;</button>
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <div class="description">
+                            <img src="./img/drinks/espresso.png" alt="drinks-photo-espresso">
+                            <p>The espresso, also known as a short black, is approximately 1 oz. of highly concentrated
+                                coffee.<br><br>
+                                It is known for its robust flavour and bold, concentrated taste.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div id="modal2" class="modal">
+                    <button class="prev" onclick="changeModalSlide(-1, 2)">&#10094;</button>
+                    <button class="next" onclick="changeModalSlide(1, 2)">&#10095;</button>
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <div class="description">
+                            <img src="./img/drinks/double-espresso.png" alt="drinks-photo-double-espresso">
+                            <p>A double espresso may also be listed as doppio, which is the Italian word for double.</p>
+                        </div>
+                    </div>
+                </div>
+                <div id="modal3" class="modal">
+                    <button class="prev" onclick="changeModalSlide(-1, 3)">&#10094;</button>
+                    <button class="next" onclick="changeModalSlide(1, 3)">&#10095;</button>
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <div class="description">
+                            <img src="./img/drinks/latte.png" alt="drinks-photo-latte">
+                            <p>lattes are considered an introductory coffee drink since the acidity and bitterness of
+                                coffee are
+                                cut by the amount of milk in the beverage. <br><br>
+                                Flavoring syrups such as caramel, vanilla are often added to the latte for those who
+                                enjoy
+                                sweeter drinks.</p>
+                        </div>
+                    </div>
+                </div>
+                <div id="modal4" class="modal">
+                    <button class="prev" onclick="changeModalSlide(-1, 4)">&#10094;</button>
+                    <button class="next" onclick="changeModalSlide(1, 4)">&#10095;</button>
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <div class="description">
+                            <img src="./img/drinks/longblack.png" alt="drinks-photo-longblack">
+                            <p>The long black is a similar coffee drink to the americano, but it originated in New
+                                Zealand and
+                                Australia. It generally has more crema than an americano.<br><br>
+                                Those who enjoy the rich, full flavour of espresso often prefer it but want a
+                                longer-lasting
+                                caffeine boost.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div id="modal5" class="modal">
+                    <button class="prev" onclick="changeModalSlide(-1, 5)">&#10094;</button>
+                    <button class="next" onclick="changeModalSlide(1, 5)">&#10095;</button>
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <div class="description">
+                            <img src="./img/drinks/cappuccino.png" alt="drinks-photo-cappuccino">
+                            <p>This creamy coffee drink is usually consumed at breakfast time in Italy and is loved in
+                                the
+                                United States as well. It is usually associated with indulgence and comfort because of
+                                its thick
+                                foam layer and additional flavorings that can be added to it.</p>
+                        </div>
+                    </div>
+                </div>
+                <div id="modal6" class="modal">
+                    <button class="prev" onclick="changeModalSlide(-1, 6)">&#10094;</button>
+                    <button class="next" onclick="changeModalSlide(1, 6)">&#10095;</button>
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <div class="description">
+                            <img src="./img/drinks/mocha.png" alt="drinks-photo-mocha">
+                            <p>Mocha is a coffee made with a latte base and chocolate syrup or cocoa powder added. The
+                                chocolate flavour in a mocha comes from either chocolate syrup or cocoa powder, which is
+                                mixed into the steamed milk before the espresso is added. This gives the mocha a rich,
+                                chocolaty taste and a smooth, creamy texture.</p>
+                        </div>
+                    </div>
+                </div>
+                <div id="modal7" class="modal">
+                    <button class="prev" onclick="changeModalSlide(-1, 7)">&#10094;</button>
+                    <button class="next" onclick="changeModalSlide(1, 7)">&#10095;</button>
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <div class="description">
+                            <img src="./img/drinks/flatwhite.png" alt="drinks-photo-flatwhite">
+                            <p>A flat white also originates from New Zealand and Australia and is very similar to a
+                                cappuccino
+                                but lacks the foam layer and chocolate powder.<br><br>
+                                The milk foam is typically poured over the espresso and milk in a circular motion,
+                                creating a "flat" surface on top of the drink. To keep the drink creamy rather than
+                                frothy, steamed milk from the bottom of the jug is used
+                                instead of from the top.</p>
+                        </div>
+                    </div>
+                </div>
+                <div id="modal8" class="modal">
+                    <button class="prev" onclick="changeModalSlide(-1, 8)">&#10094;</button>
+                    <button class="next" onclick="changeModalSlide(1, 8)">&#10095;</button>
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <div class="description">
+                            <img src="./img/drinks/icedcoffee.png" alt="drinks-photo-iced-coffee">
+                            <p>Iced coffee is made by boiling hot coffee and then chilling it over ice.<br><br>
+                                The recipes do have some variance, with some locations choosing to interchange milk with
+                                water
+                                in the recipe. Often, different flavoring syrups will be added per the preference of the
+                                customer. You can even top it off with some cold foam.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div id="modal9" class="modal">
+                    <button class="prev" onclick="changeModalSlide(-1, 9)">&#10094;</button>
+                    <button class="next" onclick="changeModalSlide(1, 9)">&#10095;</button>
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <div class="description">
+                            <img src="./img/drinks/chailatte.png" alt="drinks-photo-chailatte">
+                            <p>A Chai Latte is a coffee made with a latte base and chai tea concentrate. It is a spicy,
+                                aromatic
+                                coffee characterized by its bold, full-bodied flavour and smooth, creamy texture. </p>
+                        </div>
+                    </div>
+                </div>
+                <div id="modal10" class="modal">
+                    <button class="prev" onclick="changeModalSlide(-1, 10)" style="display: none;">&#10094;</button>
+                    <button class="next" onclick="changeModalSlide(1, 10)">&#10095;</button>
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <div class="description">
+                            <img src="./img/drinks/americano.png" alt="drinks-photo-americano">
+                            <p>An Americano is a type of coffee made by adding boiled water to a shot of espresso. It is
+                                called
+                                an "Americano" because it is similar to the kind of coffee typically served in the
+                                United
+                                States, usually made by brewing hot water over ground coffee beans.<br><br>
+                                It is thought to have originated during World War II. Soldiers would add water to their
+                                coffee
+                                to extend their rations farther. The water dilutes the espresso while still maintaining
+                                a high
+                                level of caffeine.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--footer-->
+            <div data-footer-content="footer.html"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v19.0" nonce="8O78nkJY"></script>
+</body>
+
+</html>
